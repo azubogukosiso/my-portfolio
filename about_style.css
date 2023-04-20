@@ -1,0 +1,64 @@
+.about-photo {
+    width: 30%;
+    height: 370px;
+    border-radius: 7px;
+}
+
+.about-photo img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-info {
+    width: 55%;
+}
+
+.about-info p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about-info .btn {
+    background: rgb(0, 119, 182);
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.about-info .btn:hover {
+    background: rgb(1, 138, 212);
+}
+
+.skill-tab {
+    background: rgb(3, 4, 80);
+}
+
+.skill-tab span {
+    letter-spacing: 0.08rem;
+}
+
+@media screen and (max-width: 991px) {
+
+    .about-photo {
+        width: 70%;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .main div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .about-info {
+        width: 85%;
+    }
+}
+
+.first,
+.second {
+    margin-bottom: 10em;
+}

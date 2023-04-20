@@ -1,0 +1,51 @@
+.main {
+    margin-bottom: 10em;
+}
+
+.work-sample {
+    min-height: 450px;
+    position: relative;
+    border-radius: 7px;
+}
+
+.work-sample:hover .overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+img {
+    object-fit: cover;
+}
+
+.overlay {
+    transition: 0.15s;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+    .overlay {
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.overlay .btn {
+    background: rgb(0, 119, 182);
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.overlay .btn:hover {
+    background: rgb(1, 138, 212);
+}
+
+.work-info p {
+    font-size: 18px;
+    font-weight: 400;
+}
